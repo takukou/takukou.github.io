@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<style>
+		@font-face{font-family: brush; src: url('fonts/LeviReBrushed.ttf');}
+		@font-face{font-family: cry; src: url('fonts/ConcursoItalian_BTN.ttf');}
+		@font-face{font-family: cry-bold; src: url('fonts/ConcursoItalian_BTN_Bold.ttf');}
+		@font-face{font-family: geo; src: url('fonts/GeosansLight.ttf');}
+		
+		body {
+			overflow:hidden;
+		}
+		
+		.text1 {
+			font-family: cry;
+			color: #FFF;
+			position: relative;
+		}
+		.text2 {
+			font-family: brush;
+			color: #FFF;
+			position: relative;
+		}
+		.text3 {
+			font-family: geo;
+			color: #FFF;
+			position: relative;
+		}
+		/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+		.row.content {height: 1500px}
+		
+		/* Set gray background color and 100% height */
+		.sidenav {
+			background: rgba(50,50,50,0.75);
+			height: 100vh;
+		}
+		
+		/* Set black background color, white text and some padding */
+		footer {
+		  background-color: #555;
+		  color: white;
+		  padding: 15px;
+		}
+		
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+		  .sidenav {
+			height: auto;
+			padding: 15px;
+		  }
+		  .row.content {height: auto;} 
+		}
+		
+		.noselect {
+		  -webkit-touch-callout: none; 
+			-webkit-user-select: none; 
+			 -khtml-user-select: none; 
+			   -moz-user-select: none; 
+				-ms-user-select: none; 
+					user-select: none; 
+		}
+		
+		.image {
+			background-image: url("img/shrine2.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			height: 100vh;
+		}
+		.image:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.6);
+		}
+		
+		.margin{
+			margin-top:10vh;
+		}
+		.margin-m{
+			margin-top:20vh;
+		}
+		.margin-t {
+			margin-top:40vh;
+		}
+		
+		.nav>li>a.active,
+		.nav>li>a:hover,
+		.nav>li>a:focus {
+			background-color: #5c8a36;
+		}
+		
+		#current{
+		 background-color: #5c8a36;
+		}
+		#right{
+			position:relative;
+			overflow-y:auto;
+		}
+	</style>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-social.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		
+		<meta http-equiv="refresh" content="5">
+		
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+		
+		<div class="container-fluid image noselect">
+			<div class="row">
+				<div class="col-sm-3 sidenav text2">
+					<div class="row">
+						<ul class="nav nav-pills flex-column" style="font-size:3vh">
+							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Top</a></li>
+						</ul>
+					</div>
+					<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle" style="display:inline; " alt="me">
+					<div style="margin-top:2vh">
+						<a class="btn btn-social-icon btn-facebook" style="cursor:pointer">
+							<span class="fa fa-facebook"></span>
+						</a>
+						<a class="btn btn-social-icon btn-github" style="cursor:pointer">
+							<span class="fa fa-github"></span>
+						</a>
+						<a class="btn btn-social-icon btn-instagram" style="cursor:pointer">
+							<span class="fa fa-instagram"></span>
+						</a>
+						<a class="btn btn-social-icon btn-linkedin" style="cursor:pointer">
+							<span class="fa fa-linkedin"></span>
+						</a>
+					</div>
+					<ul class="nav nav-pills flex-column text-center" style="font-size:5vh; margin-top: 5vh;">
+						<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
+						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:7.5vh;" id="portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link project1" style="cursor:default; font-size:2.5vh; margin-top:1vh;" align="right" id="current">&gt;Personal Portfolio Website</a></li>
+						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vh; margin-top:1vh;" align="right">More to come.</a></li>
+					</ul><br>
+				</div>
+				<div class="col-sm-9" id="right" style="height:100vh">
+					<div class="row text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
+						<h1 class="margin" style="font-size:20vh; cursor:default;">Personal Portfolio Website</h3>
+					</div>
+					<div class="row text3" style="">
+						<div class="col-sm-3 card text-center" style="background:rgba(0,0,0,0); border-color:rgba(255,255,255,0);">
+							<img src="img/webport.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+							<p>Index page mockup</p>
+							<img src="img/webport1.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+							<p>Portfolio page mockup</p>
+							<img src="img/webport2.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+							<p>Project page mockup</p>
+						</div>
+						<div class="col-sm-9 card" style="font-size:2.5vh; background:rgba(0,0,0,0); border-color:rgba(255,255,255,0);">
+							<p>
+								This project's goal is to develop a full working portfolio website readily online that displays the projects that I have done in, but not limited to, COMP4461 Human-Computer Interaction. 
+								It is an opportunity to showcase my ability to design and develop a website not only for the use in this course, but also for any future employers. 
+							</p>
+							<p>
+								First, I had to make an initial design using mockup tools to clearly visualise how my project may look like. 
+								The professor then introduce to us on design concepts, human psychology in regards to computer interaction, as well as empathising with potential users.  
+								Taking these into consideration, I had to modify my design such that it is user-friendly and aesthetically pleasing. 
+							</p>
+							<p>
+								Several changes I have made to the inital design includes: 
+								<ul>
+									<li>centering components on the index page to not lose users' focus; </li>
+									<li>highlighting buttons that the users' mouse hovers on instead of popping out a triangle pointing to the object to grab users' attention on their current action; </li>
+									<li>use background images for every page so that the pages are not too plain; </li>
+									<li>a "Top" button incase the users ever wanted to return to the index page. </li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			$("#top").click(function(){
+				window.location = "index.html";
+			});
+			$("#about").click(function(){
+				window.location = "about.html";
+			});
+			$("#portfolio").click(function(){
+				window.location = "portfolio.html";
+			});
+			$(".btn-facebook").click(function(){
+				window.open("https://www.facebook.com/hende.lam");
+			});
+			$(".btn-github").click(function(){
+				window.open("https://github.com/takukou");
+			});
+			$(".btn-instagram").click(function(){
+				window.open("https://www.instagram.com/haendey/");
+			});
+			$(".btn-linkedin").click(function(){
+				window.open("https://www.linkedin.com/in/hendersen-lam-827941bb/");
+			});
+		</script>
+    </body>
+</html>
