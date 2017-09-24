@@ -5,11 +5,7 @@
 		@font-face{font-family: cry; src: url('fonts/ConcursoItalian_BTN.ttf');}
 		@font-face{font-family: cry-bold; src: url('fonts/ConcursoItalian_BTN_Bold.ttf');}
 		@font-face{font-family: geo; src: url('fonts/GeosansLight.ttf');}
-		
-		body {
-			overflow:hidden;
-		}
-		
+				
 		.text1 {
 			font-family: cry;
 			color: #FFF;
@@ -42,13 +38,24 @@
 		}
 		
 		/* On small screens, set height to 'auto' for sidenav and grid */
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 699px) {
 		  .sidenav {
 			height: auto;
-			padding: 15px;
 		  }
-		  .row.content {height: auto;} 
+		  #dp{
+			width:25vmin;
+			height:25vmin;
+		  }
+		  #right{
+		  }
 		}
+		@media screen and (min-width: 700px) {
+			#right{
+				position:relative;
+				overflow-y:auto;
+			}
+		}
+		
 		
 		.noselect {
 		  -webkit-touch-callout: none; 
@@ -59,32 +66,26 @@
 					user-select: none; 
 		}
 		
-		.image {
-			background-image: url("img/dog.jpg");
+		.image{
+			background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/dog.jpg");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			position: relative;
 			height: 100vh;
 		}
-		.image:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			background: rgba(0,0,0,0.6);
-		}
 		
+		#whole {
+			overflow:auto;
+		}
 		.margin{
-			margin-top:10vh;
+			margin-top:10vmin;
 		}
 		.margin-m{
-			margin-top:20vh;
+			margin-top:20vmin;
 		}
 		.margin-t {
-			margin-top:40vh;
+			margin-top:40vmin;
 		}
 		
 		.nav>li>a.active,
@@ -95,10 +96,6 @@
 		
 		#current{
 		 background-color: #5c8a36;
-		}
-		#right{
-			position:relative;
-			overflow-y:auto;
 		}
 	</style>
     <head>
@@ -141,16 +138,16 @@
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 		
-		<div class="container-fluid image noselect">
+		<div class="container-fluid image noselect" id="whole">
 			<div class="row">
 				<div class="col-sm-3 sidenav text2">
 					<div class="row">
-						<ul class="nav nav-pills flex-column" style="font-size:3vh">
+						<ul class="nav nav-pills flex-column" style="font-size:3vmin">
 							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Top</a></li>
 						</ul>
 					</div>
-					<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle" style="display:inline; " alt="me">
-					<div style="margin-top:2vh">
+					<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle" style="display:inline;" alt="me">
+					<div style="margin-top:2vmin">
 						<a class="btn btn-social-icon btn-facebook" style="cursor:pointer">
 							<span class="fa fa-facebook"></span>
 						</a>
@@ -164,18 +161,18 @@
 							<span class="fa fa-linkedin"></span>
 						</a>
 					</div>
-					<ul class="nav nav-pills flex-column text-center" style="font-size:5vh; margin-top: 5vh;">
+					<ul class="nav nav-pills flex-column text-center" style="font-size:5vmin; margin-top: 5vmin;">
 						<li class="nav-item"><a class="nav-link" style="cursor:default" id="current">About</a></li>
-						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:7.5vh;" id="portfolio">Portfolio</a></li>
-						<li class="nav-item"><a class="nav-link project1" style="cursor:pointer; font-size:2.5vh; margin-top:1vh;" align="right">&gt;Personal Portfolio Website</a></li>
-						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vh; margin-top:1vh;" align="right">More to come.</a></li>
+						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:7.5vmin;" id="portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link project1" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Personal Portfolio Website</a></li>
+						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
 				</div>
 				<div class="col-sm-9" id="right" style="height:100vh">
 					<div class="row text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0); cursor:default;">
-						<h1 class="margin" style="font-size:20vh">About</h3>
+						<h1 class="margin" style="font-size:20vmin">About</h3>
 					</div>
-					<div class="row margin card text3" style="background: rgba(0,0,0,0); border-color:rgba(255,255,255,0); font-size:2.5vh; margin-left:2vw; margin-right:2vw; cursor:default">
+					<div class="row margin card text3" style="background: rgba(0,0,0,0); border-color:rgba(255,255,255,0); font-size:2.5vmin; margin-left:2vw; margin-right:2vw; cursor:default">
 						<p>
 							I'm a Computer Science student currently in my final year of undergraduate studies at Hong Kong University of Science and Technology. 
 							I've dived into a Design Thinking course during the Summer of 2016 and made a simple exercise game made for the elderly. 
@@ -195,7 +192,7 @@
 							I have played drum for the past 12 years, though my skills now are rusty due to the limited conditions in my university life. 
 							Of course at heart I'm a gamer, be it PC, mobile or console games, I play them all. 
 						</p>
-						<p style="margin-top: 10vh; font-size:1.5vh;" align="right">
+						<p style="margin-top: 10vmin; font-size:1.5vmin;" align="right">
 							Credits to my friend Shanehh for the profile drawing 
 							<a class="btn btn-social-icon btn-xs btn-tumblr" id="shanehh" style="cursor:pointer">
 								<span class="fa fa-tumblr"></span>

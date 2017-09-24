@@ -10,35 +10,26 @@
 			height: 100%;
 			margin: 0;
 		}
-		.margin {margin-bottom: 5vh;}
+		.margin {margin-bottom: 5vmin;}
 		
 		.container-fluid {
-			padding-top: 15vh;
+			padding-top: 15vmin;
 		}
 		
 		.container-fluid_s {
-			padding-top: 2vh;
+			padding-top: 2vmin;
 		}
 		
 		.wrap {
 			width: 100%;
 		}
-		.image {
-			background-image: url("img/breakfast.jpg");
+		.image{
+			background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/breakfast.jpg");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			position: relative;
 			height: 100vh;
-		}
-		.image:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			background: rgba(1,1,1,0.5);
 		}
 		.text1 {
 			font-family: cry;
@@ -120,17 +111,17 @@
 		<div class="wrap noselect">
 			<div class="image">
 				<div class="text1 text-center container-fluid">
-					<h1 style="font-size:8vh; cursor:default;" class="margin">Hendersen Lam</h1>
+					<h1 style="font-size:8vmin; cursor:default;" class="margin">Hendersen Lam</h1>
 					<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle margin" style="display:inline; max-width:25vw; height:auto; width:auto; max-height:25vh;" alt="me">
 					<div class="row">
 						<div class="col-sm-12">
-							<a class="margin" style="font-size:5vh; cursor:default;">I am a&nbsp</a>
-							<a id="typed" style="font-size:5vh; cursor:default;"></a> 
+							<a class="margin" style="font-size:5vmin; cursor:default;">I am a&nbsp</a>
+							<a id="typed" style="font-size:5vmin; cursor:default;"></a> 
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12 text2">
-							<ul class="nav nav-pills flex-column text-center margin" style="font-size:4vh">
+							<ul class="nav nav-pills flex-column text-center margin" style="font-size:4vmin">
 								<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
 								<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="portfolio">Portfolio</a></li>
 							</ul><br>
@@ -155,7 +146,7 @@
 						</div>
 						<div class="row" style="cursor:default;">
 							<div class="col-sm-12" style="background: rgba(0,0,0,0); border-color:rgba(255,255,255,1);>
-								<p style="font-size: 2vh">Credits to <a href="http://www.mattboldt.com/">Matt</a> for his typing script.</p>
+								<p style="font-size: 2vmin">Credits to <a href="http://www.mattboldt.com/">Matt</a> for his typing script.</p>
 							</div>
 						</div>
 					
@@ -184,8 +175,6 @@
 			$(".btn-linkedin").click(function(){
 				window.open("https://www.linkedin.com/in/hendersen-lam-827941bb/");
 			});
-			
-			
 		</script>
 		<script>
 		var options = {
