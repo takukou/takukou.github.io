@@ -6,22 +6,19 @@
 		@font-face{font-family: cry-bold; src: url('fonts/ConcursoItalian_BTN_Bold.ttf');}
 		@font-face{font-family: geo; src: url('fonts/GeosansLight.ttf');}
 		
-		body, html {
-			height: 100%;
-			margin: 0;
-		}
+		
 		.margin {margin-bottom: 5vmin;}
 		
 		.container-fluid {
-			padding-top: 15vmin;
+			padding-top: 12.5vmin;
 		}
 		
 		.container-fluid_s {
 			padding-top: 2vmin;
 		}
 		
-		.wrap {
-			width: 100%;
+		#whole {
+			overflow:auto;
 		}
 		.image{
 			background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/breakfast.jpg");
@@ -54,18 +51,6 @@
 				-ms-user-select: none; 
 					user-select: none; 
 		}
-		<!--
-		#sticky {
-		  width:100%;
-		  height:10vh;
-		  padding-top:20px;
-		  background:black;
-		  color:white;
-		  text-align:center;
-		  position:fixed;    /*Here's what sticks it*/
-		  bottom:0;          /*to the bottom of the window*/
-		  left:0;            /*and to the left of the window.*/
-		}-->
 	</style>
     <head>
         <meta charset="utf-8">
@@ -108,8 +93,8 @@
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 		
 		
-		<div class="wrap noselect">
-			<div class="image">
+		
+			<div class="image noselect" id="whole">
 				<div class="text1 text-center container-fluid">
 					<h1 style="font-size:8vmin; cursor:default;" class="margin">Hendersen Lam</h1>
 					<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle margin" style="display:inline; max-width:25vw; height:auto; width:auto; max-height:25vh;" alt="me">
@@ -120,7 +105,9 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-12 text2">
+						<div class="col-sm-5">
+						</div>
+						<div class="col-sm-2 text2">
 							<ul class="nav nav-pills flex-column text-center margin" style="font-size:4vmin">
 								<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
 								<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="portfolio">Portfolio</a></li>
@@ -154,7 +141,7 @@
 				
 			</div>
 			
-		</div>
+		
 		
 		<script>
 			$("#about").click(function(){
