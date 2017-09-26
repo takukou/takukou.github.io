@@ -24,11 +24,11 @@
 		/* Set gray background color and 100% height */
 		.sidenav {
 			background: linear-gradient(rgba(50,50,50,0.75),rgba(50,50,50,0.75));
+			height:auto;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			position: relative;
-			
 		}
 				
 		/* On small screens, set height to 'auto' for sidenav and grid */
@@ -37,12 +37,6 @@
 			width:25vmin;
 			height:25vmin;
 		  }
-		  
-		}
-		@media screen and (orientation: portrait) {
-			.sidenav{
-				height:100vh;
-			}
 		}
 		
 		.noselect {
@@ -127,7 +121,7 @@
 		
 		<div class="container-fluid image noselect" id="whole">
 			<div class="row">
-				<div class="col-sm-3 sidenav text2">
+				<div class="col-sm-3 sidenav text2" id="left">
 					<div class="row">
 						<ul class="nav nav-pills flex-column" style="font-size:3vmin">
 							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Top</a></li>
@@ -155,7 +149,7 @@
 						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
 				</div>
-				<div class="col-sm-9" style="height:100%">
+				<div class="col-sm-9" id="right" style="height:100%">
 					<div class="row text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
 						<h1 class="margin" style="font-size:20vmin; cursor:default;">Personal Portfolio Website</h3>
 					</div>
