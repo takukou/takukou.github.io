@@ -37,19 +37,33 @@
 		  padding: 15px;
 		}
 		
-		/* On small screens, set height to 'auto' for sidenav and grid */
-		@media screen and (max-width: 699px) {
-		  .sidenav {
-			height: auto;
-		  }
+		@media screen and (max-width: 575px) {
 		  #dp{
 			width:25vmin;
 			height:25vmin;
 		  }
-		  #right{
+		}
+		
+		@media screen and (min-width: 576px) and (max-width: 767px) {
+		  #dp{
+			width:25vmin;
+			height:20vmin;
 		  }
 		}
-		@media screen and (min-width: 700px) {
+		
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+		  .sidenav {
+			height: auto;
+		  }
+		  
+		  #right{
+		  }
+		  #whole {
+			overflow:auto;
+		  }
+		}
+		@media screen and (min-width: 768px) {
 			#right{
 				position:relative;
 				overflow-y:auto;
@@ -75,9 +89,7 @@
 			height: 100vh;
 		}
 		
-		#whole {
-			overflow:auto;
-		}
+		
 		.margin{
 			margin-top:10vmin;
 		}
