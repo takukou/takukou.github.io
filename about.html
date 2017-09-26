@@ -51,22 +51,28 @@
 		  }
 		}
 		
-		/* On small screens, set height to 'auto' for sidenav and grid */
-		@media screen and (max-width: 767px) {
-		  .sidenav {
-			height: auto;
-		  }
-		  
-		  #right{
-		  }
-		  #whole {
-			overflow:auto;
-		  }
-		}
-		@media screen and (min-width: 768px) {
+		
+		
+		@media screen and (max-width: 1024px) and (max-height: 768px) {
+			.margin {
+				margin-top:5vmin;
+			}
 			#right{
 				position:relative;
 				overflow-y:auto;
+			}
+			
+		}
+		@media screen and (min-width: 1024px) and (min-height: 768px) {
+			.margin {
+				margin-top:10vmin;
+			}
+			#right{
+				position:relative;
+				overflow-y:auto;
+			}
+			#whole {
+				overflow::auto;
 			}
 		}
 		
@@ -90,9 +96,6 @@
 		}
 		
 		
-		.margin{
-			margin-top:10vmin;
-		}
 		.margin-m{
 			margin-top:20vmin;
 		}
@@ -175,7 +178,7 @@
 					</div>
 					<ul class="nav nav-pills flex-column text-center" style="font-size:5vmin; margin-top: 5vmin;">
 						<li class="nav-item"><a class="nav-link" style="cursor:default" id="current">About</a></li>
-						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:7.5vmin;" id="portfolio">Portfolio</a></li>
+						<li class="nav-item active"><a class="nav-link margin" style="cursor:pointer" id="portfolio">Portfolio</a></li>
 						<li class="nav-item"><a class="nav-link project1" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Personal Portfolio Website</a></li>
 						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
