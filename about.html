@@ -26,8 +26,13 @@
 		
 		/* Set gray background color and 100% height */
 		.sidenav {
-			background: rgba(50,50,50,0.75);
-			height: 100vh;
+			background: linear-gradient(rgba(50,50,50,0.75),rgba(50,50,50,0.75));
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			
 		}
 		
 		/* Set black background color, white text and some padding */
@@ -39,9 +44,6 @@
 		
 		/* On small screens, set height to 'auto' for sidenav and grid */
 		@media screen and (max-width: 575px) and (orientation: portrait) {
-		  .sidenav {
-			height: auto;
-		  }
 		  #dp{
 			width:25vmin;
 			height:25vmin;
