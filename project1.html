@@ -124,7 +124,7 @@
 				<div class="col-sm-3 sidenav text2" id="left">
 					<div class="row">
 						<ul class="nav nav-pills flex-column" style="font-size:3vmin">
-							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Top</a></li>
+							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Home</a></li>
 						</ul>
 					</div>
 					<span>
@@ -146,7 +146,7 @@
 					</span>
 					<ul class="nav nav-pills flex-column text-center" style="font-size:5vmin; margin-top: 5vmin;">
 						<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
-						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:7.5vmin;" id="portfolio">Portfolio</a></li>
+						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:2.5vmin;" id="portfolio">Portfolio</a></li>
 						<li class="nav-item"><a class="nav-link project1" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right" id="current">&gt;Personal Portfolio Website</a></li>
 						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
@@ -155,16 +155,26 @@
 					<div class="row text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
 						<h1 class="margin" style="font-size:20vmin; cursor:default;">Personal Portfolio Website</h3>
 					</div>
-					<div class="row text3" style="">
-						<div class="col-sm-3 card text-center" style="background:rgba(0,0,0,0); border-color:rgba(255,255,255,0); font-size:1.75vh;">
-							<img src="img/webport.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
-							<p>Index page mockup</p>
-							<img src="img/webport1.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
-							<p>Portfolio page mockup</p>
-							<img src="img/webport2.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
-							<p>Project page mockup</p>
+					<div class="row text3" style="font-size:2vmin">
+						<div class="col-sm-6">
+							<ul>
+								<li>Type: Website</li>
+								<li>Target Audience: Friends, family, possibly future employers</li>
+								<li>Objective: Showcase to target audience my portfolio and more importantly, to display my ability in website-making without templates</li>
+							</ul>
 						</div>
-						<div class="col-sm-9 card" style="font-size:2.5vmin; background:rgba(0,0,0,0); border-color:rgba(255,255,255,0);">
+						<div class="col-sm-6">
+							<ul>
+								<li>Style: Casual/personal</li>
+								<li>Tools/Language: Balsamiq, HTML, CSS, JavaScript, jQuery, Bootstrap, Bootstrap Social Networking Icons, Typed.js</li>
+								<li>Fonts: Levi Rebrushed, ConcursoItalian BTN, Geosans Light</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row text3" style="">
+						<div class="col-sm-12 card" style="font-size:2.5vmin; background:rgba(0,0,0,0); border-color:rgba(255,255,255,0);">
+							
+							<h3><b><u>Overview</u></b></h3>
 							<p>
 								This project's goal is to develop a full working portfolio website readily online that displays the projects that I have done in, but not limited to, COMP4461 Human-Computer Interaction. 
 								It is an opportunity to showcase my ability to design and develop a website not only for the use in this course, but also for any future employers. 
@@ -174,13 +184,40 @@
 								The professor then introduce to us on design concepts, human psychology in regards to computer interaction, as well as empathising with potential users.  
 								Taking these into consideration, I had to modify my design such that it is user-friendly and aesthetically pleasing. 
 							</p>
+							<h3><b><u>Initial Design</u></b></h3>
+							<div class="row text-center">
+								<div class="col-sm-4">
+									<img src="img/webport.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Index page mockup</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/webport1.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Portfolio page mockup</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/webport2.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Project page mockup</p>
+								</div>
+							</div>
+							<p>
+								Index page: Initial design was to use a video game kind of layout.
+							</p>
+							<p>
+								Portfolio page: Initial design was to keep it simple with some side nav buttons and the pictures related to the projects with title as the hover text.
+							</p>
+							<p>
+								Project page: Initial design was to have a nice screenshot as the top image/banner while have progression pictures on the left and a chunk of text on the right.
+							</p>
+							<h3><b><u>Final Design Changes</u></b></h3>
 							<p>
 								Several changes I have made to the inital design includes: 
 								<ul>
 									<li>centering components on the index page to not lose users' focus; </li>
 									<li>highlighting buttons that the users' mouse hovers on instead of popping out a triangle pointing to the object to grab users' attention on their current action; </li>
 									<li>use background images for every page so that the pages are not too plain; </li>
-									<li>a "Top" button incase the users ever wanted to return to the index page. </li>
+									<li>place the pictures in between the wall of texts in the project page so that the readers would not be overwhelmed by the texts; </li>
+									<li>a "Home" button incase the users ever wanted to return to the index page; </li>
+									<li>adding social networking icons that links to my social networking profiles for contacting purposes. </li>
 								</ul>
 							</p>
 						</div>
@@ -210,7 +247,7 @@
 				window.open("https://www.instagram.com/haendey/");
 			});
 			$(".btn-linkedin").click(function(){
-				window.open("https://www.linkedin.com/in/hendersen-lam-827941bb/");
+				window.open("https://www.linkedin.com/in/hendelam/");
 			});
 		</script>
     </body>
