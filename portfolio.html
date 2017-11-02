@@ -161,6 +161,7 @@
 						<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
 						<li class="nav-item active"><a class="nav-link" style="cursor:default; margin-top:2.5vmin;" id="current">Portfolio</a></li>
 						<li class="nav-item"><a class="nav-link project1" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Personal Portfolio Website</a></li>
+						<li class="nav-item"><a class="nav-link project2" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Redesign Light</a></li>
 						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
 				</div>
@@ -175,12 +176,18 @@
 							<p style="font-size:5vmin">Personal Portfolio Website</p>
 						</div>
 						<div class="col-sm-2"></div>
-						<div class="col-sm-4 text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
-							<h1 class="margin-m" style="cursor:default">MORE TO COME.</h1>
+						<div id="project2" class="col-sm-4 text1 card text-center project2" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
+							<img src="" class="img-fluid img-thumbnail" style="display:inline; margin-top:5vmin;" alt="redesign light">
+							<p style="font-size:5vmin">Redesign Light</p>
 						</div>
 						<div class="col-sm-1"></div>
 					</div>
-					s
+					<div class="row" style="">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4 text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
+							<h1 class="margin-m" style="cursor:default">MORE TO COME.</h1>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -201,6 +208,15 @@
 			});
 			$("#project1").mouseout(function(){
 				$("#project1").css("background-color", "rgba(92,138,54,0)")
+			});
+			$(".project2").click(function(){
+				window.location = "project2.html";
+			});
+			$("#project2").mouseover(function(){
+				$("#project2").css("background-color", "rgba(92,138,54,1)")
+			});
+			$("#project2").mouseout(function(){
+				$("#project2").css("background-color", "rgba(92,138,54,0)")
 			});
 			$(".btn-facebook").click(function(){
 				window.open("https://www.facebook.com/hende.lam");

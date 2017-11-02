@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<style>
+		@font-face{font-family: brush; src: url('fonts/LeviReBrushed.ttf');}
+		@font-face{font-family: cry; src: url('fonts/ConcursoItalian_BTN.ttf');}
+		@font-face{font-family: cry-bold; src: url('fonts/ConcursoItalian_BTN_Bold.ttf');}
+		@font-face{font-family: geo; src: url('fonts/GeosansLight.ttf');}
+				
+		.text1 {
+			font-family: cry;
+			color: #FFF;
+			position: relative;
+		}
+		.text2 {
+			font-family: brush;
+			color: #FFF;
+			position: relative;
+		}
+		.text3 {
+			font-family: geo;
+			color: #FFF;
+			position: relative;
+		}
+		/* Set gray background color and 100% height */
+		.sidenav {
+			background: linear-gradient(rgba(50,50,50,0.75),rgba(50,50,50,0.75));
+			height:auto;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+				
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 575px) and (orientation: portrait) {
+		  #dp{
+			width:25vmin;
+			height:25vmin;
+		  }
+		}
+		
+		
+		.noselect {
+		  -webkit-touch-callout: none; 
+			-webkit-user-select: none; 
+			 -khtml-user-select: none; 
+			   -moz-user-select: none; 
+				-ms-user-select: none; 
+					user-select: none; 
+		}
+		
+		.image{
+			background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/shrine2.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			height: 100vh;
+		}
+		
+		#whole {
+			overflow:auto;
+		}
+		.margin{
+			margin-top:10vmin;
+		}
+		.margin-m{
+			margin-top:20vmin;
+		}
+		.margin-t {
+			margin-top:40vmin;
+		}
+		
+		.nav>li>a.active,
+		.nav>li>a:hover,
+		.nav>li>a:focus {
+			background-color: #5c8a36;
+		}
+		
+		#current{
+		 background-color: #5c8a36;
+		}
+			
+	</style>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Project 1: Personal Portfolio Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-social.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+		
+		<div class="container-fluid image noselect" id="whole">
+			<div class="row">
+				<div class="col-sm-3 sidenav text2" id="left">
+					<div class="row">
+						<ul class="nav nav-pills flex-column" style="font-size:3vmin">
+							<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="top">Home</a></li>
+						</ul>
+					</div>
+					<span>
+						<img id="dp" src="img/dp.JPG" class="img-fluid rounded-circle" style="display:inline; " alt="me">
+					</span>
+					<span>
+						<a class="btn btn-social-icon btn-facebook" style="cursor:pointer; margin-top:2vmin;">
+							<span class="fa fa-facebook"></span>
+						</a>
+						<a class="btn btn-social-icon btn-github" style="cursor:pointer; margin-top:2vmin;">
+							<span class="fa fa-github"></span>
+						</a>
+						<a class="btn btn-social-icon btn-instagram" style="cursor:pointer; margin-top:2vmin;">
+							<span class="fa fa-instagram"></span>
+						</a>
+						<a class="btn btn-social-icon btn-linkedin" style="cursor:pointer; margin-top:2vmin;">
+							<span class="fa fa-linkedin"></span>
+						</a>
+					</span>
+					<ul class="nav nav-pills flex-column text-center" style="font-size:5vmin; margin-top: 5vmin;">
+						<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
+						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:2.5vmin;" id="portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link project1" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Personal Portfolio Website</a></li>
+						<li class="nav-item"><a class="nav-link project2" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right" id="current">&gt;Redesign Light</a></li>
+						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
+					</ul><br>
+				</div>
+				<div class="col-sm-9" id="right" style="height:100%">
+					<div class="row text1 card text-center" style="background: rgba(0,0,0,0); border-color:rgba(0,0,0,0);">
+						<h1 class="margin" style="font-size:20vmin; cursor:default;">Redesign Light</h3>
+					</div>
+					<div class="row text3" style="font-size:2vmin">
+						<div class="col-sm-6">
+							<ul>
+								<li>Type: Pathway Lighting System</li>
+								<li>Target Audience: Any person that needs to walk through dark pathways or tunnels at night.</li>
+								<li>Objective: Provide a adequately lit pathways/tunnels at night to be user-friendly & eco-friendly.</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<ul>
+								<li>Main Feature: Lights that follow users.</li>
+								<li>Prototype Components: Ultra-sound sensor, Arduino, LEDs, Wires, Resistors, Breadboard, Paper</li>
+								<li>Team Members: David, Kristian</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row text3" style="">
+						<div class="col-sm-12 card" style="font-size:2.5vmin; background:rgba(0,0,0,0); border-color:rgba(255,255,255,0);">
+							
+							<h3><b><u>Overview</u></b></h3>
+							<p>
+								This project's topic is "Redesign Light". 
+								We have made some observations around us and we have found out that the lighting for some paths are too dark or the lighting for tunnels are too bright at night.
+								We found out that these bright tunnels are not environment-friendly nor user-friendly, hence we have came up with a design to illuminate the path according to the user's position in the tunnel.
+								
+							</p>
+							<h3><b><u>Video Summary</u></b></h3>
+							<div class="text-center">
+								<iframe id="video" style="position:relative" width="720vw" height="405vw" src="https://www.youtube.com/embed/rz_ZeL0gfIg" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<h3 style="margin-top: 2.5vmin"><b><u>Survey</u></b></h3>
+							<p>
+								We conducted a survey on people's view on inadequately lit pathways at night and collected 41 responses. Images below shows a summary of the statistics collected. The survey can be found <a href="https://goo.gl/forms/iJAAGNVxt45Pd6ii2"><b>here</b></a>.
+							</p>
+							<div class="row text-center">
+								<div class="col-sm-4">
+									<img src="img/project2/survey1.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/survey2.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/survey3.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+							</div>
+							<h3 style="margin-top: 2.5vmin"><b><u>Point of View</u></b></h3>
+							<div class="row">
+								<div class="col-sm-4">
+									<h3><u>User</u></h3>
+									<p>John Smith</p>
+									<ul>
+										<li>Age: 20</li>
+										<li>Occupation: Student</li>
+										<li>Status: Single</li>
+										<li>Location: Hong Kong</li>
+									</ul>
+									<p>General Description: Daily citizens that might use dimly lit pathways or tunnels.</p>
+								</div>
+								<div class="col-sm-4">
+									<h4><u>Need</u></h4>
+									<p>User needs to...</p>
+									<ul>
+										<li>Get to places at night</li>
+										<li>Walk through poorly lit pathways/tunnels at night</li>
+										<li>Adjust to light differences through brightly lit tunnels</li>
+									</ul>
+									<p>User do not...</p>
+									<ul>
+										<li>Have alternative pathways</li>
+										<li>Know what is in the dark</li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<h4>&nbsp;</h4>
+									<p>User wants to...</p>
+									<ul>
+										<li>Be safe at night</li>
+										<li>See where they are going</li>
+										<li>Look at their surroundings comfortably</li>
+									</ul>
+									<p>User cannot...</p>
+									<ul>
+										<li>Control the lighting in public places</li>
+										<li>Ensure their safety in dark places</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class = "col-sm-12">
+									<h4><u>Insights</u></h4>
+									<ul>
+										<li>Sufficiently lit pathways/tunnels</li>
+										<li>Dimmed lighting while inactive to conserve energy</li>
+										<li>Light that follows the user</li>
+									</ul>
+								</div>
+							</div>
+							<h3><b><u>First Iteration</u></b></h3>
+							<p>
+								The first iteration is a paper prototype with 10 red LEDs and an ultra-sound sensor connected to an arduino.
+								The ultra-sound detects the position of the target and lights up 1 LED light above it while the rest are off.
+							</p>
+							<div class="row text-center">
+								<div class="col-sm-4">
+									<img src="img/project2/initial1.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Tunnel Prototype Construction</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/initial2.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Arduino Setup on Prototype</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/initial3.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>LED Testing on Prototype</p>
+								</div>
+							</div>
+							<div class="row text-center">
+								<div class="col-sm-4">
+									<img src="img/project2/initial4.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Configuring Ultra-sound Sensor</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/initial5.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Final Wires Management</p>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/initial6.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<p>Model for Testing Prototype</p>
+								</div>
+							</div>
+							<h3><b><u>Second and Final Iteration</u></b></h3>
+							<p>
+								After testing out our first iteration with a few UST students and collecting their response, we collated the results and made the following changes accordingly:
+							</p>
+							<ul>
+								<li>Changed red LEDs to yellow LEDs to give a warmer colour and feel. Makes the visibility better as well as give the users a sense of security.</li>
+								<li>Changed the number of LEDs lit up from 1 to 3. Provides more vision to the users of their surrounding and path ahead.</li>
+							</ul>
+							<div class="row text-center">
+								<div class="col-sm-4">
+									<img src="img/project2/final1.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/final2.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+								<div class="col-sm-4">
+									<img src="img/project2/final3.jpg" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+								</div>
+							</div>
+							<h3 style="margin-top: 2.5vmin"><b><u>Final Thoughts and Review</u></b></h3>
+							<p>
+								With enough ultra-sound sensors, a better design could have been made with a sensor at every LED area.
+								Each sensor will be responsible for one LED. 
+								This design will support multiple users and would have been a better final product.
+							</p>
+							<p>
+								Due to limited resources, we could not implement one of our other designs that we have thought of which is to have the tunnel lighted up all the time but only dimly. 
+								The ultra-sound sensor will still pick up the user's location and brighten up the LEDs near that position. 
+								As the initial survey shows, people are less likely to approach any dark paths if there are alternatives.
+								Hence, a dimly lit tunnel will give the users a better sense of safety while still trying to be eco-friendly.
+							</p>
+							<p>
+								Admittedly, our design may not work in Hong Kong as it is a very safe city. 
+								There are many other aspects to consider if such design is to be employed elsewhere in the world, such as beggers/homeless people who stays/lurks in the tunnels.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			$("#top").click(function(){
+				window.location = "index.html";
+			});
+			$("#about").click(function(){
+				window.location = "about.html";
+			});
+			$("#portfolio").click(function(){
+				window.location = "portfolio.html";
+			});
+			$(".project1").click(function(){
+				window.location = "project1.html";
+			});
+			$("#project1").mouseover(function(){
+				$("#project1").css("background-color", "rgba(92,138,54,1)")
+			});
+			$("#project1").mouseout(function(){
+				$("#project1").css("background-color", "rgba(92,138,54,0)")
+			});
+			$(".btn-facebook").click(function(){
+				window.open("https://www.facebook.com/hende.lam");
+			});
+			$(".btn-github").click(function(){
+				window.open("https://github.com/takukou");
+			});
+			$(".btn-instagram").click(function(){
+				window.open("https://www.instagram.com/haendey/");
+			});
+			$(".btn-linkedin").click(function(){
+				window.open("https://www.linkedin.com/in/hendelam/");
+			});
+		</script>
+    </body>
+</html>

@@ -148,6 +148,7 @@
 						<li class="nav-item"><a class="nav-link" style="cursor:pointer" id="about">About</a></li>
 						<li class="nav-item active"><a class="nav-link" style="cursor:pointer; margin-top:2.5vmin;" id="portfolio">Portfolio</a></li>
 						<li class="nav-item"><a class="nav-link project1" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right" id="current">&gt;Personal Portfolio Website</a></li>
+						<li class="nav-item"><a class="nav-link project2" style="cursor:pointer; font-size:2.5vmin; margin-top:1vmin;" align="right">&gt;Redesign Light</a></li>
 						<li class="nav-item"><a class="nav-link" style="cursor:default; font-size:2.5vmin; margin-top:1vmin;" align="right">More to come.</a></li>
 					</ul><br>
 				</div>
@@ -187,15 +188,15 @@
 							<h3><b><u>Initial Design</u></b></h3>
 							<div class="row text-center">
 								<div class="col-sm-4">
-									<img src="img/webport.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<img src="img/project1/webport.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
 									<p>Index page mockup</p>
 								</div>
 								<div class="col-sm-4">
-									<img src="img/webport1.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<img src="img/project1/webport1.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
 									<p>Portfolio page mockup</p>
 								</div>
 								<div class="col-sm-4">
-									<img src="img/webport2.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
+									<img src="img/project1/webport2.JPG" class="img-fluid img-thumbnail" style=" display:inline;" alt="website portfolio design">
 									<p>Project page mockup</p>
 								</div>
 							</div>
@@ -236,6 +237,15 @@
 			});
 			$("#portfolio").click(function(){
 				window.location = "portfolio.html";
+			});
+			$(".project2").click(function(){
+				window.location = "project2.html";
+			});
+			$("#project2").mouseover(function(){
+				$("#project2").css("background-color", "rgba(92,138,54,1)")
+			});
+			$("#project2").mouseout(function(){
+				$("#project2").css("background-color", "rgba(92,138,54,0)")
 			});
 			$(".btn-facebook").click(function(){
 				window.open("https://www.facebook.com/hende.lam");
